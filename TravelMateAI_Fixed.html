@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TravelMate AI Fixed</title><style>body{font-family:Arial,sans-serif;margin:0;padding:20px;background:#f3f6fa}button{padding:10px} .page{display:block}</style></head><body><h1>TravelMate AI (Fixed Version)</h1><p>Main broken links and JavaScript URL functions repaired.</p><script>
+function openMap(type){const q=prompt('Destination?'); if(!q)return; const url=type==='amap' ? 'https://www.amap.com/search?query='+encodeURIComponent(q) : 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q); window.open(url,'_blank');}
+function metroSearch(){const from=prompt('From'); const to=prompt('To'); if(!from||!to)return; window.open('https://www.google.com/search?q='+encodeURIComponent(from+' to '+to+' metro route'),'_blank');}
+function searchWeb(q,extra=''){window.open('https://www.google.com/search?q='+encodeURIComponent(q+' '+extra),'_blank');}
+function quickSearch(q){window.open('https://www.google.com/search?q='+encodeURIComponent(q),'_blank');}
+function weatherSearch(city){window.open('https://www.google.com/search?q='+encodeURIComponent(city+' weather forecast'),'_blank');}
+function foodSearch(city){window.open('https://www.google.com/maps/search/'+encodeURIComponent('halal food in '+city),'_blank');}
+</script><p><a href="https://www.amap.com/" target="_blank">Amap official map</a></p><p><a href="https://www.xe.com/currencyconverter/" target="_blank">XE Currency Converter</a></p><p><a href="https://weather.com/" target="_blank">Weather.com</a></p><button onclick="openMap('google')">Test Google Maps</button></body></html>
